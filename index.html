@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<!-- 
+    Step one: generate a random number and display it in the "target number" div.
+    Step two: assign valiues to each crystal img.
+    Step three: make cruystal images clickable buttons.
+    Step four: add value of crystals to "score" on each click.
+    Step five: if target === score: wins++, if target > score: losses++
+-->
+<body>
+<h1><b id="header">Welcome to Crystal Collector!</b></h1>
+
+<div><h3>You will be given a random number at the start of the game.
+    <br>
+    <br>
+    There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+    <br>
+    <br>
+    You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.
+    <br>
+    <br>
+    The value of each crystal is hidden from you until you click on it.
+    <br>
+    <br>
+    Each time the game starts, the values of each crystal will change.</h3>
+
+</div>
+
+<div>
+    <h1><b id="target">Target number: </b></h1>
+</div>
+
+<div>
+    <h3 id="winsAndLosses">Wins:
+        <br>
+        <br>
+        Losses:
+    </h3>
+</div>
+
+<div><img id="blue" class="crystal" src="assets/images/blue.png" height="200">
+    <img id="gold" class="crystal" src="assets/images/gold.png" height="200">
+    <img id="green" class="crystal" src="assets/images/green.png" height="200">
+    <img id="orange" class="crystal" src="assets/images/orange.jpg" height="200">
+</div>
+
+<div><h3>Your total score is:</h3></div>
+
+<div>
+<h1><b id="score"></b></h1>
+
+</div>
+
+
+        <script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
